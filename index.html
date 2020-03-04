@@ -9,15 +9,14 @@
     <title>Document</title>
 </head>
 
-<body class="container">
-    
-        <div class="container" style="text-align: center;">
-            <h1 class="">Welcome to the Number Guessing Game</h1>
+<body>
+        <div style="text-align: center">
+            <h1>Welcome to the Number Guessing Game</h1>
             <div id="chanceArea">Chance : </div>
             <input type="number" id="userinput" />
-            <button id="guessButton">Guess</button>
-            <button id="resetButton" class="btn btn-success" onclick="reset()">Reset</button>
-            <button id="timeCount" class="btn-danger">Play</button>
+            <button class="btn btn-primary btn-lg" id="guessButton">Guess</button>
+            <button class="btn btn-outline-secondary" id="resetButton" class="btn btn-success" onclick="reset()">Reset</button>
+            <button class="btn btn-outline-success" id="timeCount" class="btn-danger">Play</button>
             <div id="history"></div>
             <div id="resultArea">Result will appear here :</div>
             <span id="loseArea"></span>
