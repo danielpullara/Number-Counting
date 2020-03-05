@@ -30,8 +30,8 @@ function timecounting() {
             timeOut()
             document.getElementById('loseArea').innerHTML = 'you_lose';
             guessButton.disabled=true
-            playButton.disabled=true
-            
+            // playButton.disabled=true
+            document.getElementById("timeCount").style.visibility = "hidden";
         }
     }, 1000)// every 1 second, it will add 1 into time variable (computer use millisecond so 1000 is 1 second)
     
@@ -97,7 +97,8 @@ function reset() {
     chanceArea.innerHTML = `Chance: ${chance}`
     resultArea.innerHTML = `${message}`
     guessButton.disabled=false
-    playButton.disabled=false
+    //playButton.disabled=false
+    document.getElementById("timeCount").style.visibility = "visible";
     
 }
 
